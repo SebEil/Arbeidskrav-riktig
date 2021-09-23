@@ -1,0 +1,26 @@
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+    margin-top: 3rem;
+
+    .product{
+        grid-column: auto / span 4;
+
+        .bg-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__title{
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgb(30, 30, 30);            
+            padding: 1rem;
+            text-align: center;
+        }
+    }
+
+}

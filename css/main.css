@@ -122,4 +122,27 @@ table {
   .main-page-header .navigation-container {
     display: block;
   }
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+  margin-top: 3rem;
+}
+.products-container .product {
+  grid-column: auto/span 4;
+}
+.products-container .product .bg-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+}
+.products-container .product__title {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1e1e1e;
+  padding: 1rem;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

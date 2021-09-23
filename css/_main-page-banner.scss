@@ -1,0 +1,29 @@
+.main-page-banner{    
+    height: 300px;
+    background-color: red;    
+    margin-top: 6rem;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+
+    display: flex;
+    justify-content: end;
+
+    .banner-text-container{
+        background-color: rgba(30, 30, 30, 0.8);
+        color: white;
+        width: 50%;
+        padding: 1rem;
+
+        h3{
+            font-size: 2.5rem;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+    }
+
+}

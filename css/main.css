@@ -58,8 +58,8 @@ table {
 
 .main-page-banner {
   height: 300px;
-  background-color: red;
-  margin-top: 6rem;
+  background-color: azure;
+  margin-top: 5rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -67,13 +67,15 @@ table {
   justify-content: end;
 }
 .main-page-banner .banner-text-container {
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: rgba(70, 167, 110, 0.8);
   color: white;
-  width: 50%;
+  width: 100vw;
   padding: 1rem;
 }
 .main-page-banner .banner-text-container h3 {
   font-size: 2.5rem;
+  align-items: center;
+  text-align: center;
 }
 .main-page-banner .banner-text-container p {
   text-align: justify;
@@ -97,7 +99,7 @@ table {
 }
 
 .main-page-header {
-  background-color: white;
+  background-color: gray;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -91,6 +91,10 @@ table {
   color: white;
   text-align: left;
 }
+.main-footer .footer-contact {
+  color: white;
+  padding: 1rem;
+}
 .main-footer .footer-name {
   padding-bottom: 2rem;
   color: white;

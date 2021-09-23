@@ -81,6 +81,23 @@ table {
   text-align: justify;
 }
 
+.main-footer {
+  min-height: 12rem;
+  background-color: black;
+}
+.main-footer .footer-text {
+  padding: 2rem;
+  margin: 1rem;
+  color: white;
+  text-align: left;
+}
+.main-footer .footer-name {
+  padding-bottom: 2rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .main-page-header {
   background-color: gray;
   display: flex;
@@ -122,27 +139,4 @@ table {
   .main-page-header .navigation-container {
     display: block;
   }
-}
-
-.products-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1rem;
-  margin-top: 3rem;
-}
-.products-container .product {
-  grid-column: auto/span 4;
-}
-.products-container .product .bg-image {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: row;
-}
-.products-container .product__title {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #1e1e1e;
-  padding: 1rem;
-  text-align: center;
 }/*# sourceMappingURL=main.css.map */

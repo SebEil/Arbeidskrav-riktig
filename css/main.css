@@ -121,6 +121,9 @@ table {
   font-size: 1.3rem;
   padding: 1rem;
 }
+.main-page-header .logo .logoimg {
+  height: 50px;
+}
 .main-page-header .hamburger {
   padding: 1rem;
 }
@@ -142,4 +145,46 @@ table {
   .main-page-header .navigation-container {
     display: block;
   }
+}
+
+.products-container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+.products-container .product {
+  grid-column: auto/span 10;
+}
+.products-container .product .bg-image {
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  transition: top 0.5s;
+}
+.products-container .product .bg-image:hover .recommended {
+  top: 1rem;
+  overflow: visible;
+}
+.products-container .product .bg-image .recommended {
+  width: 70px;
+  position: absolute;
+  top: -3rem;
+  right: 1rem;
+  transition: 0.5s;
+}
+.products-container .product__title {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1e1e1e;
+  padding: 1rem;
+  text-align: center;
+}
+.products-container .product p {
+  margin: 1rem;
 }/*# sourceMappingURL=main.css.map */

@@ -77,4 +77,45 @@ table {
 }
 .main-page-banner .banner-text-container p {
   text-align: justify;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.main-page-header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+}
+.main-page-header .logo {
+  text-decoration: none;
+  color: #141414;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.main-page-header .hamburger {
+  padding: 1rem;
+}
+.main-page-header .navigation-container {
+  display: none;
+}
+.main-page-header .main-navigation {
+  display: flex;
+}
+.main-page-header .main-navigation .main-navigation__link {
+  padding: 1rem;
+  color: #141414;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .main-page-header .hamburger {
+    display: none;
+  }
+  .main-page-header .navigation-container {
+    display: block;
+  }
+}

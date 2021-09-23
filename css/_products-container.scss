@@ -6,7 +6,7 @@
     grid-gap: 1rem;
 
     .product{
-        grid-column: auto / span 10;
+        grid-column: auto / span 4;
 
         .bg-image{
             height:200px;
@@ -14,8 +14,8 @@
             background-repeat: no-repeat;
             background-position: top;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+            flex-direction:row;
+            justify-content: flex-start;
             position: relative;
             overflow: hidden;
             transition: top 0.5s;
@@ -37,14 +37,29 @@
         }
 
         &__title{
-            background-color: rgba(255, 255, 255, 0.8);
-            color: rgb(30, 30, 30);
+            background-color: rgba(1, 77, 11, 0.397);
+            color: white;
             padding: 1rem;
-            text-align: center;
+            text-align: left;
+            width: 100px;
         }
 
         p{
-            margin: 1rem;
+            background-color: rgba(1, 77, 11, 0.397);
+            padding-left: 1rem;
+            font-size: larger;
+
+
+            i{
+                color:rgba(1, 77, 11, 0.397)
+            }
+
+            &:hover{
+                i{
+                    color:rgba(23, 46, 31, 0.856)
+                }
+            }
         }
+
     }
 }

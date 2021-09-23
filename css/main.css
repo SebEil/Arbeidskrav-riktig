@@ -154,7 +154,7 @@ table {
   grid-gap: 1rem;
 }
 .products-container .product {
-  grid-column: auto/span 10;
+  grid-column: auto/span 4;
 }
 .products-container .product .bg-image {
   height: 200px;
@@ -162,8 +162,8 @@ table {
   background-repeat: no-repeat;
   background-position: top;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
   position: relative;
   overflow: hidden;
   transition: top 0.5s;
@@ -180,11 +180,20 @@ table {
   transition: 0.5s;
 }
 .products-container .product__title {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #1e1e1e;
+  background-color: rgba(1, 77, 11, 0.397);
+  color: white;
   padding: 1rem;
-  text-align: center;
+  text-align: left;
+  width: 100px;
 }
 .products-container .product p {
-  margin: 1rem;
+  background-color: rgba(1, 77, 11, 0.397);
+  padding-left: 1rem;
+  font-size: larger;
+}
+.products-container .product p i {
+  color: rgba(1, 77, 11, 0.397);
+}
+.products-container .product p:hover i {
+  color: rgba(23, 46, 31, 0.856);
 }/*# sourceMappingURL=main.css.map */

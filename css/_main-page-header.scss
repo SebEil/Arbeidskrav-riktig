@@ -1,0 +1,50 @@
+.main-page-header{   
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+
+    position: fixed;
+    top: 0;
+    width: 100vw;
+
+    .logo{
+        text-decoration: none;
+        color: rgb(20, 20, 20);
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .hamburger{
+        padding: 1rem;
+    }
+
+    .navigation-container{
+        display: none;
+    }
+
+    .main-navigation{
+        display: flex;
+
+        .main-navigation__link{
+            padding: 1rem;
+            color: rgb(20, 20, 20);
+            font-family: sans-serif;
+        }
+    }
+
+    /*
+        Tablet og oppover
+    */
+    @media  screen and (min-width: 768px) {
+        .hamburger{
+            display: none;
+        }
+    
+        .navigation-container{
+            display: block;
+        }
+    }
+}

@@ -82,17 +82,16 @@ table {
 }
 
 .main-footer {
-  margin-top: 3rem;
-  min-height: 10rem;
+  min-height: 12rem;
   background-color: black;
 }
 .main-footer .footer-text {
-  margin-top: 90px;
+  margin: 1rem;
   color: white;
   text-align: left;
 }
 .main-footer .footer-name {
-  margin-top: 50px;
+  margin-top: 70px;
   color: white;
   text-align: center;
   text-transform: uppercase;

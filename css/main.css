@@ -79,6 +79,23 @@ table {
   text-align: justify;
 }
 
+.main-footer {
+  margin-top: 3rem;
+  min-height: 10rem;
+  background-color: black;
+}
+.main-footer .footer-text {
+  margin-top: 90px;
+  color: white;
+  text-align: left;
+}
+.main-footer .footer-name {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .main-page-header {
   background-color: white;
   display: flex;

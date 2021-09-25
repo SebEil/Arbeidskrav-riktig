@@ -152,6 +152,9 @@ table {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1rem;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 .products-container .product {
   grid-column: auto/span 4;
@@ -196,4 +199,72 @@ table {
 }
 .products-container .product p:hover i {
   color: rgba(23, 46, 31, 0.856);
+}
+
+body {
+  height: 100;
+  width: 100%;
+  background: #67595E;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
+
+.container {
+  margin-top: 5rem;
+  display: flex;
+  height: 200px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.container:hover {
+  width: 510px;
+  transition: 0.5s;
+}
+.container .right {
+  background: #A49393;
+  padding: 1rem;
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+  text-align: left;
+  border: 1px solid black;
+}
+.container .right .title {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.container .right .desc {
+  font-size: 20px;
+}
+.container .right button {
+  margin-top: 1rem;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+.container .right button:hover {
+  background: #350113;
+  transform: scale(1.03);
+  transition: 1s;
+}
+.container .left {
+  background: url(/images/pasta.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 91%;
+  width: 40%;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid black;
 }/*# sourceMappingURL=main.css.map */

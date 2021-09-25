@@ -5,7 +5,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
     max-height: max-content;
-    background: $secondary;
 
     .product{
         grid-column: auto / span 4;

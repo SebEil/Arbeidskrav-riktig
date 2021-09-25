@@ -1,13 +1,20 @@
 @use "meyers-reset-modified";
 
+$primary: #67595E;
+$secondary: #A49393;
+$third: #EED6D3;
+$fourth: #E8B4B8;
+
 body{
     height: 100;
     width: 100%;
-    background: black;
+    background: $primary;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1rem;
     max-height: max-content;
+
+    grid-column: auto / span 4;
 }
 
 .container{
@@ -23,8 +30,8 @@ body{
     transition: 0.5s;
     }
 
-   .right{
-       background: #A49393;
+   .left{
+       background: $secondary;
        padding: 1rem;
        width: 50%;
        border-radius: 10px 0 0 10px;
@@ -47,7 +54,7 @@ body{
        button{
            margin-top: 1rem;
            background: rgb(0, 0, 0);
-           color: white;
+           color: $third;
            border-radius: 5px;
            font-size: 20px;
            outline: none;
@@ -63,14 +70,40 @@ body{
        }
    }
 
-   .left{
+   .right{
        background: url(/images/pasta.jpg) no-repeat;
        background-size: cover;
        background-position: center;
        height: 91%;
-       width: 40%;
+       width: 50%;
        border-radius: 0 10px 10px 0;
-       border: 1px solid black
+       border: 1px solid black;
+
+
+        ul{
+            display: none;
+
+            &:hover{
+                display: block;
+                height: 90%;
+                width: 75%;
+                background-color:rgba($color: #000000, $alpha: 0.8);
+                list-style: none;
+                border-radius: 0 10px 10px 0;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: left;
+                padding: 10px 26px;
+            }
+
+
+            li{
+
+                font-size: 15px;
+                color: white;
+            }
+        }
    }
 
 

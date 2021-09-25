@@ -1,5 +1,10 @@
+$primary: #67595E;
+$secondary: #A49393;
+$third: #EED6D3;
+$fourth: #E8B4B8;
+
 .main-page-header{   
-    background-color: gray;
+    background-color: $secondary;
     display: flex;
     justify-content: space-between;
     align-items: center;

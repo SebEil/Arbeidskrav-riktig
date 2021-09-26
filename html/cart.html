@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script defer src="/js/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+</head>
+<body>
+
+        <!-- Navbar -->
+        <header class="main-page-header">
+            <a class="logo" href="/html/index.html">
+                <img src="/images/cropped-logo-white-2-min-exact-top.png" alt="" class="logoimg">
+            </a>
+            <i class="hamburger fas fa-bars"></i>
+            <nav class="navigation-container">
+                <ul class="main-navigation">
+                    <li><a class="main-navigation__link" href="/html/index.html">Hjem</a></li>
+                    <li><a class="main-navigation__link" href="#la">Kontakt</a></li>
+                    <li><a class="main-navigation__link" href="#ng"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <section class="containerShopping">
+        <h1 class="fas fa-shopping-cart">Shopping Cart</h1>
+        <div class="cart">
+            <div class="cartProducts">
+                <div class="cartProduct">
+                    <img class="productImg" src="/images/pasta.jpg" alt="pasta">
+                    <div class="productDesc">
+                        <p class="productName">Pasta</p>
+                        <p class="productPrice">Lorem, ipsum dolor.</p>
+                        <p class="productQuantity">Antall: <input value="1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cartPrice"></div>
+        </div>
+    </section>    
+    
+</body>
+</html>

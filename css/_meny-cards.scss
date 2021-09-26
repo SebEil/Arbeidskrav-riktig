@@ -8,19 +8,15 @@ $gradient1: #6253e1;
 $gradient2: #852D91;
 $gradient3: #37c049;
 
-body{
-    background-image: linear-gradient(to left, $third,$primary,$third);
-    height: 140vh;
-    display: grid;
-    place-items: center center;
-    font-family: sans-serif;
-}
-
 h1{
     margin-top: 6rem;
     color: $secondary;
     font-size:xx-large;
     font-weight: bold;
+}
+
+body{
+    background-image: linear-gradient(to left, $third,$primary,$third);
 }
 
 .cards{

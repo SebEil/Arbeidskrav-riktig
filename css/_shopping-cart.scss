@@ -1,10 +1,13 @@
+@use "meyers-reset-modified";
+
 
 .containerShopping{
 
-    margin-bottom: 900px;
-
+    margin-top: -600px;
 
     h1{
+
+        margin-bottom: 100px;
 
         &:hover{
             transform: scale(1.2);
@@ -37,7 +40,6 @@
             }
 
             .productDesc{
-                padding: 50px;
                 width: 100%;
             }
         }

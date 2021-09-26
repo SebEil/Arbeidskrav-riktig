@@ -1,10 +1,13 @@
-$primary: #470433;
-$secondary: #A49393;
-$third: #EED6D3;
+$primary: #67595E;
+$secondary: #ffffff;
+$third: #1c1b29;
 $fourth: #E8B4B8;
+$gradient1: #6253e1;
+$gradient2: #852D91;
+$gradient3: #37c049;
 
 .main-page-header{   
-    background-image: linear-gradient(to left, $primary,$third,$primary);
+    background-image: linear-gradient(to left, $third,$primary,$third);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +20,7 @@ $fourth: #E8B4B8;
 
     .logo{
         text-decoration: none;
-        color: rgb(20, 20, 20);
+        color: rgb(255, 255, 255);
         font-family: sans-serif;
         font-size: 1.3rem;
         padding: 1rem;
@@ -29,6 +32,7 @@ $fourth: #E8B4B8;
     }
 
     .hamburger{
+        color: #ffffff;
         padding: 1.6rem;
         opacity: 1;
         position: absolute;
@@ -55,7 +59,7 @@ $fourth: #E8B4B8;
 
         .main-navigation__link{
             padding: 1rem;
-            color: rgb(20, 20, 20);
+            color: rgb(255, 255, 255);
             font-family: sans-serif;
             
         }

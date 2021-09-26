@@ -42,7 +42,7 @@ $gradient3: #37c049;
     }
 
     .hamburger:hover{
-        color:  $third;
+        color:  $fourth;
         -webkit-transition: 0.5s ease-in-out;
         transition: 0.5s ease-in-out;
     }
@@ -56,17 +56,20 @@ $gradient3: #37c049;
         display: flex;
         flex-direction: row;
        
+       
 
         .main-navigation__link{
-            padding: 1rem;
+            padding: 2.1rem;
             color: rgb(255, 255, 255);
             font-family: sans-serif;
             
         }
         .main-navigation__link:hover{
-            color:  $third;
-            padding-top: 2.2rem;
-            padding-bottom: 2.15rem;
+            color: $gradient3;
+            background-color: #852d912f;
+            -webkit-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
+            
             font-family: sans-serif;
             
         }
@@ -77,15 +80,20 @@ $gradient3: #37c049;
     */
     @media  screen and (min-width: 768px) {
 
-
+        .main-navigation{
+            margin-top: 0rem;
+        }
 
 
         .hamburger{
             display: none;
             
         }
+        
         .navigation-container{
             display: block;
+
+            
             
         }
     }
@@ -93,10 +101,46 @@ $gradient3: #37c049;
     @media screen and(max-width:360px){
         .navigation-container{
             display: none;
+            max-height: 5rem;
+            
+
+            .main-navigation{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5.1rem;
+                
+                
+                
+
+                .main-navigation__link{
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 0rem;
+                    background-image: linear-gradient(to left, $third,$primary,$third);
+                    
+                    color: #ffffff;
+
+                    
+
+                    
+                }
+                .main-navigation__link:hover{
+                        color: $fourth;
+                        background-color: #4b4a4a;
+                        margin: auto;
+                        align-items: center;
+
+                    }
+                
+            }
         }
 
         .hamburger{
             display: block;
         }
+
+       
     }
 }

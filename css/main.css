@@ -256,6 +256,8 @@ h1 {
 
 .container {
   position: relative;
+  -webkit-clip-path: polygon(100% 0%, 100% 0, 100% 140%, 0 70%, 0 0);
+          clip-path: polygon(100% 0%, 100% 0, 100% 140%, 0 70%, 0 0);
 }
 
 img {

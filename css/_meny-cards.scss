@@ -42,6 +42,7 @@ h1{
 }
 .container{
     position: relative;
+    clip-path: polygon(100% 0%, 100% 0, 100% 140%, 0 70%, 0 0);
 }
 img{
     width: 100%;

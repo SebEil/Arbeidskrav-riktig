@@ -1,111 +1,95 @@
 @use "meyers-reset-modified";
 
 $primary: #67595E;
-$secondary: #A49393;
-$third: #EED6D3;
+$secondary: #ffffff;
+$third: #1c1b29;
 $fourth: #E8B4B8;
+$gradient1: #6253e1;
+$gradient2: #852D91;
+$gradient3: #37c049;
 
 body{
-    height: 100;
-    width: 100%;
-    background: $primary;
+    background-image: linear-gradient(to left, $third,$primary,$third);
+    height: 140vh;
+    display: grid;
+    place-items: center center;
+    font-family: sans-serif;
 }
 
+h1{
+    margin-top: 6rem;
+    color: $secondary;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    padding: 20px;
+    grid-gap: 40px;
+}
+.card{
+    background-image: linear-gradient($secondary,$gradient2);
+    border-radius: 30px 20px;
+    box-shadow: 1px 1px rgba(0,0,0,0.78);
+
+    &:hover{
+        background-image: linear-gradient( $gradient3, #6253e1, #852D91, $gradient3);
+        box-shadow: 1px 1px rgba(255, 255, 255, 0.808);
+        transition: 0.5s ease-in-out;
+    }
+}
 .container{
-   margin-top: 5rem;
-   display: flex;
-   height: 200px;
-   width: 500px;
-   align-items: center; 
-   justify-content: center;
+    position: relative;
+}
+img{
+    width: 100%;
+    display: block;
+    border-radius: 30px 20px 0 0;
+}
 
-   display: grid;
-   grid-template-columns: repeat(12, 1fr);
-   grid-gap: 1rem;
-   max-height: max-content;
+.details{
+    padding: 20px 10px;
 
-   grid-column: auto / span 4;
-
-   &:hover{
-    width: 510px;
-    transition: 0.5s;
+    h3{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
     }
 
-   .left{
-       background: $secondary;
-       padding: 1rem;
-       width: 50%;
-       border-radius: 10px 0 0 10px;
-       text-align: left;
-       border: 1px solid black;
+    p{
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+    }
 
+    .buttonDiv{
+        text-align: center;
+        
 
-       .title{
-           font-size: 30px;
-           font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-           text-transform: uppercase;
-           font-weight: bold;
-           margin-bottom: 0.5rem;
-       }
+        .button{
+            width: 200px;
+            font-size: 15px;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            height: 50px;
+            background-image: linear-gradient(to right, $third, $gradient2, $gradient2, $gradient3);
+            box-shadow: 0 0 10px 0 rgba(23, 1, 32, 0.75);
+            text-transform: uppercase;
 
-       .desc{
-           font-size: 20px;
-       }
-
-       button{
-           margin-top: 1rem;
-           background: rgb(0, 0, 0);
-           color: $third;
-           border-radius: 5px;
-           font-size: 20px;
-           outline: none;
-           border: none;
-           padding: 7px 10px;
-           cursor: pointer;
-
-           &:hover{
-               background:#350113;
-               transform: scale(1.03);
-               transition: 1s;
-           }
-       }
-   }
-
-   .right{
-       background: url(/images/pasta.jpg) no-repeat;
-       background-size: cover;
-       background-position: center;
-       height: 91%;
-       width: 50%;
-       border-radius: 0 10px 10px 0;
-       border: 1px solid black;
-
-
-        ul{
-            display: none;
+            border-radius: 40px;
+            -webkit-transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;
 
             &:hover{
-                display: block;
-                height: 90%;
-                width: 75%;
-                background-color:rgba($color: #000000, $alpha: 0.8);
-                list-style: none;
-                border-radius: 0 10px 10px 0;
-                display: inline-flex;
-                flex-direction: column;
-                justify-content: space-between;
-                text-align: left;
-                padding: 10px 26px;
-            }
-
-
-            li{
-
-                font-size: 15px;
-                color: white;
+                background-image: linear-gradient(to left, $gradient1, $gradient3);
+                box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.952);
+                transition: 0.5s ease-in-out;
             }
         }
-   }
-
-
+    }
 }

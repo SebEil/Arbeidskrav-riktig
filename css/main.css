@@ -205,13 +205,6 @@ body {
   height: 100;
   width: 100%;
   background: #67595E;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1rem;
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
-  grid-column: auto/span 4;
 }
 
 .container {
@@ -221,6 +214,13 @@ body {
   width: 500px;
   align-items: center;
   justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  grid-column: auto/span 4;
 }
 .container:hover {
   width: 510px;

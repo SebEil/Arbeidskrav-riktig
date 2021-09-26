@@ -9,12 +9,6 @@ body{
     height: 100;
     width: 100%;
     background: $primary;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 1rem;
-    max-height: max-content;
-
-    grid-column: auto / span 4;
 }
 
 .container{
@@ -24,6 +18,13 @@ body{
    width: 500px;
    align-items: center; 
    justify-content: center;
+
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   grid-gap: 1rem;
+   max-height: max-content;
+
+   grid-column: auto / span 4;
 
    &:hover{
     width: 510px;

@@ -14,12 +14,18 @@ $gradient3: #37c049;
 
     h1{
 
-        margin-bottom: 100px;
+        margin-bottom: 0px;
 
         &:hover{
             transform: scale(1.2);
         }
     }
+
+    /* Trengte litt margin til footeren, midlkertidig løsning */
+    .cartProduct{
+        margin-bottom: 0.5rem;
+    }
+
 /*
     .cart{
         display: grid;

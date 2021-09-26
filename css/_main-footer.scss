@@ -1,7 +1,16 @@
 @use 'meyers-reset-modified';
 
+$primary: #67595E;
+$secondary: #ffffff;
+$third: #1c1b29;
+$fourth: #E8B4B8;
+$gradient1: #6253e1;
+$gradient2: #852D91;
+$gradient3: #37c049;
+
 
 .main-footer{
+    background-color: $primary;
 
     
     .footer-text{

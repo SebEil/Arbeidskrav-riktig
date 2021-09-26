@@ -77,7 +77,7 @@ img{
             color: rgb(255, 255, 255);
             cursor: pointer;
             height: 50px;
-            background-image: linear-gradient(to right, $third, $gradient2, $gradient2, $gradient3);
+            background-image: linear-gradient(to right, $third, $gradient2, $gradient2, $third);
             box-shadow: 0 0 10px 0 rgba(23, 1, 32, 0.75);
             text-transform: uppercase;
 

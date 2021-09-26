@@ -289,7 +289,7 @@ img {
   color: white;
   cursor: pointer;
   height: 50px;
-  background-image: linear-gradient(to right, #1c1b29, #852D91, #852D91, #37c049);
+  background-image: linear-gradient(to right, #1c1b29, #852D91, #852D91, #1c1b29);
   box-shadow: 0 0 10px 0 rgba(23, 1, 32, 0.75);
   text-transform: uppercase;
   border-radius: 40px;

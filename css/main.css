@@ -109,7 +109,7 @@ table {
   min-height: 5rem;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   /*
       Tablet og oppover
   */
@@ -125,17 +125,35 @@ table {
   height: 50px;
 }
 .main-page-header .hamburger {
-  padding: 1rem;
+  padding: 1.6rem;
+  opacity: 1;
+  position: absolute;
+  right: 0px;
+  font-size: 2rem;
+}
+.main-page-header .hamburger:hover {
+  color: #18bb49;
+  background-color: #E8B4B8;
+  transition: 0.5s ease-in-out;
 }
 .main-page-header .navigation-container {
   display: none;
+  margin-right: 0px;
 }
 .main-page-header .main-navigation {
   display: flex;
+  flex-direction: row;
 }
 .main-page-header .main-navigation .main-navigation__link {
   padding: 1rem;
   color: #141414;
+  font-family: sans-serif;
+}
+.main-page-header .main-navigation .main-navigation__link:hover {
+  color: #18bb49;
+  padding-top: 2.2rem;
+  padding-bottom: 2.15rem;
+  background-color: #E8B4B8;
   font-family: sans-serif;
 }
 @media screen and (min-width: 768px) {

@@ -12,7 +12,7 @@ $fourth: #E8B4B8;
 
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: 100%;
 
     .logo{
         text-decoration: none;
@@ -28,20 +28,44 @@ $fourth: #E8B4B8;
     }
 
     .hamburger{
-        padding: 1rem;
+        padding: 1.6rem;
+        opacity: 1;
+        position: absolute;
+        right: 0px;
+        font-size: 2rem;
+        
+    }
+
+    .hamburger:hover{
+        color:  #18bb49;
+        background-color: #E8B4B8;
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
     }
 
     .navigation-container{
         display: none;
+        margin-right: 0px;
     }
 
     .main-navigation{
         display: flex;
+        flex-direction: row;
+       
 
         .main-navigation__link{
             padding: 1rem;
             color: rgb(20, 20, 20);
             font-family: sans-serif;
+            
+        }
+        .main-navigation__link:hover{
+            color:  #18bb49;
+            padding-top: 2.2rem;
+            padding-bottom: 2.15rem;
+            background-color: #E8B4B8;
+            font-family: sans-serif;
+            
         }
     }
 
@@ -49,12 +73,24 @@ $fourth: #E8B4B8;
         Tablet og oppover
     */
     @media  screen and (min-width: 768px) {
+
+
+
+
         .hamburger{
             display: none;
+            
         }
+
+        
     
         .navigation-container{
             display: block;
+            
         }
+
+        
+
+
     }
 }

@@ -72,6 +72,11 @@ table {
   width: 100vw;
   padding: 1rem;
 }
+.main-page-banner .banner-text-container:hover {
+  background-color: rgba(0, 0, 0, 0.233);
+  transition: 1s;
+  border-bottom: 1px solid white;
+}
 .main-page-banner .banner-text-container h3 {
   font-size: 2.5rem;
   align-items: center;
@@ -87,21 +92,26 @@ table {
 .main-footer {
   background-color: #67595E;
 }
+.main-footer:hover {
+  background-image: linear-gradient(to right, #1c1b29, #852D91, #852D91, #1c1b29);
+  transition: 2s;
+  border-top: 1px solid white;
+}
 .main-footer .footer-text {
   padding: 2rem;
   color: white;
   text-align: left;
 }
 .main-footer .footer-name {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
   font-size: x-large;
 }
 .main-footer h3:hover {
-  transform: scale(2);
-  transition: 2s;
+  transform: scale(1.2);
+  transition: 2s ease;
 }
 
 .main-page-header {

@@ -12,6 +12,12 @@ $gradient3: #37c049;
 .main-footer{
     background-color: $primary;
 
+    &:hover{
+        background-image: linear-gradient(to right, $third, $gradient2, $gradient2, $third);
+        transition: 2s;
+        border-top: 1px solid white;
+    }
+
     
     .footer-text{
         padding: 2rem;
@@ -20,7 +26,7 @@ $gradient3: #37c049;
     }
 
     .footer-name{
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
         color: white;
         text-align: center;
         text-transform: uppercase;
@@ -29,8 +35,8 @@ $gradient3: #37c049;
 
     h3{
         &:hover{
-            transform: scale(2);
-            transition: 2s;
+            transform: scale(1.2);
+            transition: 2s ease;
         }
     }
 }

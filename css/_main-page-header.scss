@@ -70,12 +70,13 @@ $gradient3: #37c049;
         }
         .main-navigation__link:hover{
             color: $fourth;
-            background-color: #1c1b2979;
+            background-color: #1c1b2967;
+            border-radius: 200px;
             -webkit-transition: 0.5s ease-in-out;
             transition: 0.5s ease-in-out;
             
             font-family: sans-serif;
-            transform: scale(1.05);
+            transform: scale(1.07);
             
         }
     }

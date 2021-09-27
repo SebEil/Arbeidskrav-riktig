@@ -14,6 +14,10 @@ h1{
     font-size:xx-large;
     font-weight: bold;
     margin-left: 2rem;
+
+    &:hover{
+        transform: scale(1.03);
+    }
 }
 
 body{
@@ -33,7 +37,7 @@ body{
 
     &:hover{
         background-image: linear-gradient( $gradient3, #6253e1, #852D91, $gradient3);
-        box-shadow: 1px 1px rgba(255, 255, 255, 0.808);
+        box-shadow: 2px 2px rgba(255, 255, 255, 0.808);
         transition: 0.5s ease-in-out;
     }
 }

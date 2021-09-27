@@ -28,6 +28,10 @@ $gradient3: #37c049;
 
         .logoimg{
             height: 50px;
+
+            &:hover{
+                transform: scale(1.05);
+            }
         }
     }
 
@@ -71,6 +75,7 @@ $gradient3: #37c049;
             transition: 0.5s ease-in-out;
             
             font-family: sans-serif;
+            transform: scale(1.05);
             
         }
     }

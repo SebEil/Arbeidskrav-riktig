@@ -125,6 +125,9 @@ table {
 .main-page-header .logo .logoimg {
   height: 50px;
 }
+.main-page-header .logo .logoimg:hover {
+  transform: scale(1.05);
+}
 .main-page-header .hamburger {
   color: #ffffff;
   padding: 1.6rem;
@@ -155,6 +158,7 @@ table {
   background-color: #1c1b2979;
   transition: 0.5s ease-in-out;
   font-family: sans-serif;
+  transform: scale(1.05);
 }
 @media screen and (min-width: 768px) {
   .main-page-header .hamburger {
@@ -328,45 +332,119 @@ body {
 }
 
 .containerShopping {
+  margin-left: 2rem;
   /* Trengte litt margin til footeren, midlkertidig løsning */
-  /*
-      .cart{
-          display: grid;
-
-          .cartProduct{
-              display: grid;
-              width: 100%;
-              height: 150px;
-              border: 1px solid white;
-
-              &:hover{
-                  border: 3px solid white;
-                  box-shadow: 1px 1px 2px rgb(211, 0, 0);
-                  transform: scale(1.06);
-              }
-
-              .productImg{
-                  width: 250px;
-                  height: 150px;
-                  border-right: 1px solid white;
-
-                  &:hover{
-                      transform: scale(1.01);
-                  }
-              }
-
-              .productDesc{
-                  width: 100%;
-              }
-          }
-      }*/
+  /* .cartProduct{
+       display: flex;
+       margin-top: 2rem;
+       border-radius: 0 25px 25px 0;
+   }*/
 }
 .containerShopping h1 {
-  margin-bottom: 0px;
+  margin-top: 200px;
+  margin-bottom: 100px;
 }
 .containerShopping h1:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
-.containerShopping .cartProduct {
+.containerShopping .cart {
+  display: flex;
+  margin: 2rem;
+  width: 20%;
+}
+.containerShopping .cart .cartProducts {
+  flex: 0.75;
+}
+.containerShopping .cart .cartProduct {
+  display: flex;
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+  border: 1px solid white;
   margin-bottom: 0.5rem;
+  border-radius: 0 15px 15px 0;
+}
+.containerShopping .cart .cartProduct:hover {
+  border: 2px solid white;
+  transform: scale(1.01);
+}
+.containerShopping .cart .cartProduct .productImg {
+  width: 300px;
+  height: 200px;
+  border-right: 1px solid white;
+}
+.containerShopping .cart .cartProduct .productDesc {
+  padding: 20px;
+  color: white;
+  padding: 2rem;
+  width: 100%;
+}
+.containerShopping .cart .cartProduct .productDesc .productName {
+  font-size: x-large;
+  margin-bottom: 1rem;
+}
+.containerShopping .cart .cartProduct .productDesc .productPrice {
+  margin-bottom: 1rem;
+}
+.containerShopping .cart .cartProduct .productDesc .productTrash {
+  margin-left: 7rem;
+  width: 80px;
+  position: relative;
+  padding: 10px 25px;
+  background-color: #1c1b29;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: small;
+}
+.containerShopping .cart .cartProduct .productDesc .productTrash:hover {
+  color: #1c1b29;
+  background-color: red;
+  font-weight: 600;
+  border: 1px solid gainsboro;
+}
+.containerShopping .cart .cartProduct .productDesc .productQuantity {
+  font-size: larger;
+}
+.containerShopping .cart .cartProduct .productDesc .productQuantity input {
+  margin-bottom: 1rem;
+  width: 40px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 13px;
+  background-color: #ffffff44;
+  border-style: groove;
+}
+.containerShopping .cartPrice {
+  flex: 0.25;
+  margin-left: 200px;
+  padding: 85px;
+  height: 240px;
+  border: 1px solid white;
+  border-radius: 10px 0 0 10px;
+}
+.containerShopping .cartPrice:hover {
+  transform: scale(1.02);
+  border: 2px solid white;
+}
+.containerShopping .cartPrice p {
+  margin-bottom: 15px;
+  color: white;
+  font-size: x-large;
+}
+.containerShopping .cartPrice .price {
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #1c1b29;
+  color: white;
+}
+.containerShopping .cartPrice .price:hover {
+  background-color: #37c049;
+  color: black;
+  border: 1px solid white;
+}
+
+footer {
+  margin-top: 5rem;
 }/*# sourceMappingURL=main.css.map */

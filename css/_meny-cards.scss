@@ -43,7 +43,7 @@ body{
 }
 .container{
     position: relative;
-    clip-path: polygon(100% 0%, 100% 0, 100% 140%, 0 70%, 0 0);
+    clip-path: polygon(0 0, 100% 0, 140% 130%, 0 85%, 0 0);
 }
 .mainImg{
     width: 100%;

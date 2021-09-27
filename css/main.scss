@@ -5,3 +5,8 @@
 @use "products-container";
 @use "meny-cards";
 @use "shopping-cart";
+
+body{
+    min-width: 360px;
+    
+}

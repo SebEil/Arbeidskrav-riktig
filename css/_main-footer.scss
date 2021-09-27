@@ -11,6 +11,8 @@ $gradient3: #37c049;
 
 .main-footer{
     background-color: $primary;
+    min-width: 360px;
+    
 
     &:hover{
         background-image: linear-gradient(to right, $third, $gradient2, $gradient2, $third);

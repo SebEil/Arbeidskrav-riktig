@@ -12,10 +12,10 @@ $gradient3: #37c049;
 
 .containerShopping{
 
-    margin-left: 2rem;
+    margin-left: 0rem;
 
     h1{
-        margin-top: 200px;
+        margin-top: 150px;
         margin-bottom: 100px;
 
         &:hover{
@@ -31,132 +31,7 @@ $gradient3: #37c049;
     }*/
 
 
-    .cart{
-        display: flex;
-        margin: 2rem;
-        width: 20%;
-
-        .cartProducts{
-            flex: 0.75;
-            
-        }
-
-        .cartProduct{
-            display: flex;
-            width: 600px;
-            height: 200px;
-            overflow: hidden;
-            border: 1px solid white;
-            margin-bottom: 0.5rem;
-            border-radius: 0 15px 15px 0;
-
-            &:hover{
-                border: 2px solid white;
-                transform: scale(1.01);
-            }
-
-            .productImg{
-                width: 300px;
-                height: 200px;
-                border-right: 1px solid white;
-            }
-
-            .productDesc{
-                padding: 20px;
-                color: white;
-                padding: 2rem;
-                width: 100%;
-
-                .productName{
-                    font-size: x-large;
-                    margin-bottom: 1rem;
-                }
-
-                .productPrice{
-                    margin-bottom: 1rem;
-                }
-
-                .productTrash{
-                    margin-left: 7rem;
-                    width: 80px;
-                    position: relative;
-                    padding: 10px 25px;
-                    background-color: #1c1b29;
-                    color: white;
-                    cursor: pointer;
-                    border-radius: 5px;
-                    font-size: small;
-
-
-                    &:hover{
-                        color:#1c1b29;
-                        background-color: red;
-                        font-weight: 600;
-                        border: 1px solid gainsboro;
-                        transition: 1s;
-                    }
-                }
-
-                .productQuantity{
-                    font-size: larger;
-
-                    input{
-                        margin-bottom: 1rem;
-                        width: 40px;
-                        padding: 5px;
-                        text-align: center;
-                        border-radius: 13px;
-                        background-color: #ffffff44;
-                        border-style:groove;
-
-                        &:hover{
-                            background-color: #beaaaabe;
-                            transition: 1s;
-                        }
-
-                    }
-                }
-            }
-        }
-    }
-
-    .cartPrice{
-        flex:0.25;
-        margin-left: 20px;
-        padding: 40px;
-        height: 120px;
-        border: 1px solid white;
-        border-radius: 10px 0 0 10px;
-        
-
-        &:hover{
-            transform: scale(1.02);
-            border: 2px solid white;
-        }
-
-        p{
-            margin-bottom: 15px;
-            color: white;
-            font-size: x-large;
-            display: flex;
-            justify-content: left;
-        }
-
-        .price{
-            border-radius: 20px;
-            justify-content: center;
-            padding: 10px 25px;
-            background-color:#1c1b29;
-            color: white;
-
-            &:hover{
-                background-color:$gradient3;
-                color: black;
-                border: 1px solid white;
-                transition: 1s;
-            }
-        }
-    }
+    
 }
 
 footer{
@@ -169,17 +44,23 @@ footer{
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 767px){
     .remove{
         display: none;
     }
 
     .cartProduct{
-        width: 400px;
+        width: 100vw;
+        
     }
 
     .productTrash{
         width: 10px;
         padding: 10px 10px;
     }
+
+    
+
+    
+
 }

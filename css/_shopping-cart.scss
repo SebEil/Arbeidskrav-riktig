@@ -135,8 +135,31 @@ $gradient3: #37c049;
                 }
             }    
         }
+
+        .cart-button{
+            display: flex;
+            justify-content: space-between;
+
+
+            &__end{
+                text-align: center;
+                background: #3d020270;
+                text-decoration: none;
+                color: white;
+                padding: 1rem 2rem;
+                text-transform:uppercase;
+                cursor: pointer;
+                
+            }
+        }
     }
 }
+
+footer{
+    margin-top: 10rem;
+    padding: 0;
+}
+
 
 @media screen and(max-width:497px){
     #heading{
@@ -205,34 +228,4 @@ $gradient3: #37c049;
     .imageSmallest{
         display: none;
     }
-}
-
-/*
-.containerShopping{
-
-    margin-left: 0rem;
-
-    h1{
-        margin-top: 150px;
-        margin-bottom: 100px;
-
-        &:hover{
-            transform: scale(1.05);
-        }
-    }
-
-    /* Trengte litt margin til footeren, midlkertidig løsning */
-   /* .cartProduct{
-        display: flex;
-        margin-top: 2rem;
-        border-radius: 0 25px 25px 0;
-    }
-
-
-    
-}*/
-
-footer{
-    margin-top: 10rem;
-    padding: 0;
 }

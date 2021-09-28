@@ -455,8 +455,8 @@ body {
   color: white;
 }
 
-@media screen and (max-width: 459px) {
-  .heading p {
+@media screen and (max-width: 497px) {
+  #heading p {
     font-size: 2rem;
   }
 }

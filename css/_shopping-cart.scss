@@ -65,15 +65,33 @@ $gradient3: #37c049;
 
             .imageCart{
                 width: 500px;
+                border: 1px solid white;
+
+                &:hover{
+                    transform: scale(1.01);
+                    cursor: pointer;
+                }
             }
 
             .imageSmall{
                 width: 300px;
+                border: 1px solid white;
+
+                &:hover{
+                    transform: scale(1.01);
+                    cursor: pointer;
+                }
             }
 
             .imageSmallest{
                 width: 180px;
-                height: 180px;;
+                height: 180px;
+                border: 1px solid white;
+
+                &:hover{
+                    transform: scale(1.01);
+                    cursor: pointer;
+                }
             }
 
 
@@ -82,6 +100,7 @@ $gradient3: #37c049;
         .textContent{
             flex: 1 1 350px;
             color: white;
+            justify-content: left;
 
             h3 {
                 font-size: x-large;
@@ -95,6 +114,7 @@ $gradient3: #37c049;
                 margin-top: 1rem;
                 font-size: x-large;
                 margin-bottom: 1.5rem;
+                border: 1px solid white;
 
                 &:hover{
                     background-color: #1c1b29c4;
@@ -103,6 +123,14 @@ $gradient3: #37c049;
                     font-weight: bold;
                 }
             }
+
+            .labelCart {
+                text-align: center;
+                height: 45px;
+                background: none;
+                color: #ffffff;
+                border: 1px solid white;
+             }
 
             .button{
                 text-align: center;
@@ -161,6 +189,8 @@ footer{
 }
 
 
+
+//Media Queries
 @media screen and(max-width:497px){
     #heading{
 

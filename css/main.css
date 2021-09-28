@@ -397,17 +397,33 @@ body {
 }
 .containerShoppingCart .boxContainer .imgContainer .imageCart {
   width: 500px;
+  border: 1px solid white;
+}
+.containerShoppingCart .boxContainer .imgContainer .imageCart:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 .containerShoppingCart .boxContainer .imgContainer .imageSmall {
   width: 300px;
+  border: 1px solid white;
+}
+.containerShoppingCart .boxContainer .imgContainer .imageSmall:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 .containerShoppingCart .boxContainer .imgContainer .imageSmallest {
   width: 180px;
   height: 180px;
+  border: 1px solid white;
+}
+.containerShoppingCart .boxContainer .imgContainer .imageSmallest:hover {
+  transform: scale(1.01);
+  cursor: pointer;
 }
 .containerShoppingCart .boxContainer .textContent {
   flex: 1 1 350px;
   color: white;
+  justify-content: left;
 }
 .containerShoppingCart .boxContainer .textContent h3 {
   font-size: x-large;
@@ -420,12 +436,20 @@ body {
   margin-top: 1rem;
   font-size: x-large;
   margin-bottom: 1.5rem;
+  border: 1px solid white;
 }
 .containerShoppingCart .boxContainer .textContent .price:hover {
   background-color: #1c1b29c4;
   font-size: xx-large;
   transition: 0.5s;
   font-weight: bold;
+}
+.containerShoppingCart .boxContainer .textContent .labelCart {
+  text-align: center;
+  height: 45px;
+  background: none;
+  color: #ffffff;
+  border: 1px solid white;
 }
 .containerShoppingCart .boxContainer .textContent .button {
   text-align: center;

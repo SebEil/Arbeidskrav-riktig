@@ -131,7 +131,7 @@ table {
 }
 .main-page-header .logo {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   font-family: sans-serif;
   font-size: 1.3rem;
   padding: 1rem;
@@ -164,16 +164,16 @@ table {
 }
 .main-page-header .main-navigation .main-navigation__link {
   padding: 2.1rem;
-  color: white;
+  color: #ffffff;
   font-family: sans-serif;
 }
 .main-page-header .main-navigation .main-navigation__link:hover {
-  color: #E8B4B8;
-  background-color: #1c1b2967;
-  border-radius: 200px;
-  transition: 0.5s ease-in-out;
+  color: #ffffff;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  transition: 0.2s ease-in-out;
   font-family: sans-serif;
-  transform: scale(1.07);
+  transform: scale(1.03);
 }
 @media screen and (min-width: 768px) {
   .main-page-header .hamburger {
@@ -268,14 +268,14 @@ table {
   color: rgba(23, 46, 31, 0.856);
 }
 
-h1 {
+h2 {
   margin-top: 2rem;
   color: #ffffff;
   font-size: xx-large;
   font-weight: bold;
   margin-left: 2rem;
 }
-h1:hover {
+h2:hover {
   transform: scale(1.03);
 }
 
@@ -349,46 +349,185 @@ body {
   transition: 0.5s ease-in-out;
 }
 
-.containerShopping {
-  margin-left: 0rem;
-  /* Trengte litt margin til footeren, midlkertidig løsning */
-  /* .cartProduct{
-       display: flex;
-       margin-top: 2rem;
-       border-radius: 0 25px 25px 0;
-   }*/
+.containerShoppingCart {
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+  padding: 100px 7%;
 }
-.containerShopping h1 {
-  margin-top: 150px;
-  margin-bottom: 100px;
+.containerShoppingCart #heading {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px;
+  font-size: xxx-large;
+  margin-bottom: 1rem;
 }
-.containerShopping h1:hover {
-  transform: scale(1.05);
+.containerShoppingCart #heading:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+.containerShoppingCart .boxContainer {
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.5rem 1rem white;
+  padding: 2rem;
+}
+.containerShoppingCart .boxContainer:hover {
+  box-shadow: 0 0.5rem 2rem white;
+  transform: scale(1.03);
+  transition: 1s;
+}
+.containerShoppingCart .boxContainer .product {
+  border: 1px solid white;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.5rem 1rem white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.containerShoppingCart .boxContainer .imgContainer {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  gap: 1rem;
+}
+.containerShoppingCart .boxContainer .imgContainer .imageCart {
+  width: 500px;
+}
+.containerShoppingCart .boxContainer .imgContainer .imageSmall {
+  width: 300px;
+}
+.containerShoppingCart .boxContainer .imgContainer .imageSmallest {
+  width: 180px;
+  height: 180px;
+}
+.containerShoppingCart .boxContainer .textContent {
+  flex: 1 1 350px;
+  color: white;
+}
+.containerShoppingCart .boxContainer .textContent h3 {
+  font-size: x-large;
+}
+.containerShoppingCart .boxContainer .textContent .price {
+  color: #37c049;
+  padding: 0.5rem;
+  background-color: #1c1b2970;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: x-large;
+  margin-bottom: 1.5rem;
+}
+.containerShoppingCart .boxContainer .textContent .price:hover {
+  background-color: #1c1b29c4;
+  font-size: xx-large;
+  transition: 0.5s;
+  font-weight: bold;
+}
+.containerShoppingCart .boxContainer .textContent .button {
+  text-align: center;
+  background: #3d020270;
+  text-decoration: none;
+  color: white;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.containerShoppingCart .boxContainer .textContent .button:hover {
+  background: #6d0303b4;
+  color: #ffffff;
+}
+.containerShoppingCart .boxContainer .textContent .btn {
+  justify-content: center;
+  background: #3d020270;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.containerShoppingCart .boxContainer .textContent .btn:hover {
+  background: #6d0303b4;
+  color: white;
 }
 
-footer {
-  margin-top: 5rem;
-}
-
-@media screen and (max-width: 927px) {
-  .cart {
-    flex-direction: column;
+@media screen and (max-width: 459px) {
+  .heading p {
+    font-size: 2rem;
   }
 }
-@media screen and (max-width: 767px) {
-  .remove {
+@media screen and (min-width: 379px) {
+  .button {
     display: none;
   }
-
-  .cartProduct {
-    width: 100vw;
+}
+@media screen and (max-width: 700px) {
+  .button {
+    display: block;
   }
 
-  .productTrash {
-    width: 10px;
-    padding: 10px 10px;
+  .btn {
+    display: none;
   }
 }
+@media screen and (max-width: 745px) {
+  .imageCart {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imageSmall {
+    display: none;
+  }
+}
+@media screen and (min-width: 745px) {
+  .imageSmall {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .imageSmallest {
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) {
+  .imageSmallest {
+    display: none;
+  }
+}
+/*
+.containerShopping{
+
+    margin-left: 0rem;
+
+    h1{
+        margin-top: 150px;
+        margin-bottom: 100px;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+
+    /* Trengte litt margin til footeren, midlkertidig løsning */
+/* .cartProduct{
+        display: flex;
+        margin-top: 2rem;
+        border-radius: 0 25px 25px 0;
+    }
+
+
+
+}*/
+footer {
+  margin-top: 10rem;
+  padding: 0;
+}
+
 body {
   min-width: 360px;
 }/*# sourceMappingURL=main.css.map */
